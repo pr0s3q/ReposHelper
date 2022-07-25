@@ -5,8 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ReposHelper"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
+        Title="MainWindow"
+        Height="720"
+        Width="1280"
+        ResizeMode="NoResize">
+    <Grid Background="#353b48">
+        <Grid
+            Background="#2f3640"
+            Margin="0,0,0,630">
+            <Button
+                Background="#1dd1a1" 
+                BorderBrush="#10ac84"
+                BorderThickness="2"
+                Margin="20,5,1200,5">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+        </Grid>
+        <Line
+            X1="0"
+            X2="12820"
+            Y1="50"
+            Y2="50"
+            Stroke="#222f3e"
+            StrokeThickness="3"/>
     </Grid>
 </Window>
