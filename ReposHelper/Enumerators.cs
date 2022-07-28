@@ -1,6 +1,6 @@
 ﻿namespace ReposHelper
 {
-    enum EItemType
+    public enum EItemType
     {
         Bug,
         Feature,

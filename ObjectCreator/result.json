@@ -1,0 +1,11 @@
+{
+    "Type": 0,
+    "Id": 97,
+    "Status": "In Progress",
+    "ShortTitle": "Serialize test object",
+    "Priority": 3,
+    "CreationDate": "2022-07-28T19:39:25.730379+02:00",
+    "Description": "Create simple object and serialize it to JSON",
+    "BranchName": "",
+    "MergedTo": []
+}

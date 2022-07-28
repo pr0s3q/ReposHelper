@@ -2,7 +2,7 @@
 
 namespace ReposHelper
 {
-    class Item
+    public class Item
     {
 
         #region Fields
@@ -17,14 +17,14 @@ namespace ReposHelper
         //This fields will be visible in "extended" item view
         private string description;
         private string? branchName;
-        private string[] mergedTo;
+        private string[]? mergedTo;
 
         #endregion
 
         #region Constructors
 
         public Item(EItemType type, uint id, string status, string shortTitle, byte priority, DateTime creationDate,
-            string description, string? branchName, string[] mergedTo)
+            string description, string? branchName, string[]? mergedTo)
         {
             this.type = type;
             this.id = id;
@@ -44,6 +44,16 @@ namespace ReposHelper
         #endregion
 
         #region Properties
+
+        public EItemType Type { get { return type; } }
+        public uint Id { get { return id; } }
+        public string Status { get { return status; } }
+        public string ShortTitle { get { return shortTitle; } }
+        public byte Priority { get { return priority; } }
+        public DateTime CreationDate { get { return creationDate; } }
+        public string Description { get { return description; } }
+        public string? BranchName { get { return branchName; } }
+        public string[]? MergedTo { get { return mergedTo; } }
 
         #endregion
 
