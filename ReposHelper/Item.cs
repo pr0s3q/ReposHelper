@@ -2,7 +2,7 @@
 
 namespace ReposHelper
 {
-    public class Item
+    public class Item : IComparable<Item>
     {
 
         #region Fields
@@ -40,6 +40,42 @@ namespace ReposHelper
         #endregion
 
         #region Operations
+
+        public int CompareTo(Item? other)
+        {
+            if(other == null)
+                return 1;
+
+            if (this.type == other.type &&
+                this.id == other.id &&
+                this.status == other.status &&
+                this.shortTitle == other.shortTitle &&
+                this.priority == other.priority &&
+                this.creationDate == other.creationDate &&
+                this.description == other.description &&
+                this.branchName == other.branchName)
+            {
+                if (this.mergedTo == null && other.mergedTo == null)
+                    return 0;
+
+                if ((this.mergedTo == null && other.mergedTo != null) || (this.mergedTo != null && other.mergedTo == null))
+                    return 1;
+
+                if(this.mergedTo.Length != other.mergedTo.Length)
+                    return -1;
+
+                if (this.mergedTo.Length == 0)
+                    return 0;
+
+                for (int i = 0; i < this.mergedTo.Length; i++)
+                    if (this.mergedTo[i] != other.mergedTo[i])
+                        return 1;
+
+                return 0;
+            }
+
+            return 1;
+        }
 
         #endregion
 
