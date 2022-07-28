@@ -24,6 +24,63 @@
                     </Style>
                 </Button.Resources>
             </Button>
+            <Label
+                Content="To Do"
+                Foreground="#f5f6fa"
+                FontSize="30"
+                Margin="70,0,1100,0">
+            </Label>
+            <Button
+                Background="#1dd1a1" 
+                BorderBrush="#10ac84"
+                BorderThickness="2"
+                Margin="200,5,1020,5">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Label
+                Content="New Item"
+                Foreground="#f5f6fa"
+                FontSize="30"
+                Margin="250,0,870,0">
+            </Label>
+            <Button
+                Background="#1dd1a1" 
+                BorderBrush="#10ac84"
+                BorderThickness="2"
+                Margin="430,5,790,5">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Label
+                Content="History"
+                Foreground="#f5f6fa"
+                FontSize="30"
+                Margin="480,0,680,0">
+            </Label>
+            <Button
+                Background="#1dd1a1" 
+                BorderBrush="#10ac84"
+                BorderThickness="2"
+                Margin="620,5,600,5">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Label
+                Content="Settings"
+                Foreground="#f5f6fa"
+                FontSize="30"
+                Margin="670,0,470,0">
+            </Label>
         </Grid>
         <Line
             X1="0"
@@ -31,6 +88,7 @@
             Y1="50"
             Y2="50"
             Stroke="#222f3e"
-            StrokeThickness="3"/>
+            StrokeThickness="3">
+        </Line>
     </Grid>
 </Window>
